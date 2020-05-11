@@ -58,7 +58,7 @@ class TextImporter (importer.Importer):
             # then we have paragraph markers in the text already
             outblob = " ".join(blob.split("\n")) # get rid of line breaks
             lines = outblob.split("") # split text up into paragraphs
-            outblob = "\n".join(lines) # insert linebreaks where paragraphs where
+            outblob = "\n".join(lines) # insert linebreaks where paragraphs were
             return outblob
         outblob = ""
         newline = True

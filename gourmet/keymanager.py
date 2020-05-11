@@ -58,7 +58,7 @@ class KeyManager(Exception):
         """Return a regexp to match any of the words in string."""
         regexp=r"(^|\W)("
         count=0
-        for w in re.split(r"\W+",txt):
+        for w in self.word_splitter.split(txt):
             #for each keyword, we create a search term
             if w: #no blank strings!
                 count += 1

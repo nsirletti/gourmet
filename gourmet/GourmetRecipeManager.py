@@ -1255,7 +1255,7 @@ class RecGui (RecIndex, GourmetApplication, ImporterExporter, StuffThatShouldBeP
         self.set_reccount()
         if hasattr(self,'recTrash'):
             self.recTrash.update_from_db()
-        self.message(_("Deleted") + ' ' + ', '.join([(r.title or _('Untitled')) for r in recs]))
+        self.message(_("Deleted") + ' ' + ', '.join((r.title or _('Untitled')) for r in recs))
 
     def purge_rec_tree (self, recs, paths=None, model=None):
         if not recs:
